@@ -28,9 +28,9 @@ public class KeysDistilleryAppApplication {
 			Elements links = document.select("a.post-thumbnail");
 			Elements pics = document.select("img.attachment-post-thumbnail.size-post-thumbnail.wp-post-image");
 			for (int i=0; i < titles.size(); i++){
-				System.out.println(titles.get(i).text() + " " +
-						links.get(i).attr("href") + " " +
-						pics.get(i).attr("src"));
+//				System.out.println(titles.get(i).text() + " " +
+//						links.get(i).attr("href") + " " +
+//						pics.get(i).attr("src"));
 				repository.save(new Organization(
 						titles.get(i).text(),
 						links.get(i).attr("href"),
